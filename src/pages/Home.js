@@ -18,6 +18,7 @@ const Home = () => {
     title: value,
     questions: [],
     completed: true,
+    currentId: null,
   };
 
   const addTestHandler = (e) => {

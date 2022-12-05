@@ -12,7 +12,7 @@ import { OptionStyled } from "./StyledComponents";
 import { VscAdd } from "react-icons/vsc";
 import { MdOutlineEdit, MdDeleteForever, MdDownloadDone } from "react-icons/md";
 
-const Option = ({ testId, id, question, options, completed }) => {
+const Option = ({ testId, id, question, options, completed, currentId}) => {
   const [inputOption, setInputOption] = useState("");
   const [inputEditQuestion, setInputEditQuestion] = useState("");
   const dispatch = useDispatch();
@@ -22,6 +22,8 @@ const Option = ({ testId, id, question, options, completed }) => {
     quetionId: id,
     testId: testId,
     completed: completed,
+    currentId:currentId
+ 
   };
 
   const addOptionHandler = () => {

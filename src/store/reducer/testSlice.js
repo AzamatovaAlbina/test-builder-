@@ -110,6 +110,9 @@ const testSlice = createSlice({
         return test;
       });
     },
+    clickCheckbox(state, actions){
+
+    }
   },
 });
 export const {
@@ -125,5 +128,6 @@ export const {
   completedTest,
   completedQuestion,
   completedOption,
+  clickCheckbox,
 } = testSlice.actions;
 export default testSlice;

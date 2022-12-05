@@ -24,6 +24,7 @@ const Question = ({ title, id, questions, completed }) => {
     id: Date.now().toString(),
     options: [],
     completed: completed,
+    currentId: id,
   };
 
   const navigate = useNavigate();
